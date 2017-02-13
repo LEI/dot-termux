@@ -1,5 +1,5 @@
 {
-    "os_type": ["linux-android"],
+    "os": ["android"],
     "pre_install": "termux-setup-storage",
     "dir": ".termux",
     "link": ".termux/*",
