@@ -2,3 +2,4 @@ dir: ".termux"
 link: ".termux/*"
 pre_install: "termux-setup-storage"
 post_install: "find ~/.tmux/plugins/* ! -path '*.git*' -type f -exec termux-fix-shebang '{}' \\;"
+# -name '*.sh'
