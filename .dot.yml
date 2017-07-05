@@ -1,4 +1,5 @@
-exec: "termux-setup-storage"
-link: ".termux/*:.termux"
-done: "find ~/.tmux/plugins/* ! -path '*.git*' -type f -exec termux-fix-shebang '{}' \\;"
-# -name '*.sh'
+role:
+  exec: "termux-setup-storage"
+  link: ".termux/*:.termux"
+  done: "find ~/.tmux/plugins/* ! -path '*.git*' -type f -exec termux-fix-shebang '{}' \\;"
+  # -name '*.sh'
