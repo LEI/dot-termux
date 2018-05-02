@@ -1,5 +1,4 @@
 ---
-
 role:
   install:
     - "termux-setup-storage"
