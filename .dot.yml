@@ -2,6 +2,7 @@
 role:
   install:
     - "termux-setup-storage"
+  # dir: .termux
   link:
     - ".termux/*:.termux"
   post_install:
