@@ -1,7 +1,10 @@
 ---
 role:
   install:
-    - "termux-setup-storage"
+    - |
+      if [ ! -d "$HOME/storage" ]; then
+        termux-setup-storage
+      fi
   # dir: .termux
   link:
     - ".termux/*:.termux"
