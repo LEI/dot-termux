@@ -1,5 +1,8 @@
 ---
 role:
+  # pkg:
+  #   - termux-exec
+  #   - proot
   install:
     - |
       if [ ! -d "$HOME/storage" ]; then
