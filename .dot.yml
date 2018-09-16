@@ -4,10 +4,8 @@ role:
   #   - termux-exec
   #   - proot
   install:
-    - |
-      if [ ! -d "$HOME/storage" ]; then
-        termux-setup-storage
-      fi
+    - command: termux-setup-storage
+      if: '[ ! -d "$HOME/storage" ]'
   # dir: .termux
   link:
     - ".termux/*:.termux"
